@@ -1,0 +1,58 @@
+/* Setează fontul Bellefair-Regular */
+@font-face {
+    font-family: 'Bellefair-Regular';
+    src: url('resurse/Bellefair-Regular.ttf') format('truetype');
+}
+
+															
+
+/* Container pentru a controla layout-ul */
+.container {
+    display: flex;
+    height: 700vh; /* Întregul viewport */
+}
+
+/* Zona1 - 20% din fereastră */
+.zona1 {
+    width: 20%;
+    background-color: rgba(255, 0, 255, 1); /* Fundal semitransparent pentru zona1 */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Zona2 - 80% din fereastră */
+.zona2 {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundal semitransparent pentru zona2 */
+}
+
+/* Zona3 - 80% din fereastră */
+.zona3 {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundal semitransparent pentru zona2 */
+}
+
+
+/* Titlul paginii */
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Pentru a asigura o dimensiune constantă a fontului */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Asigură-te că totul se ajustează pe ecrane mai mici */
+@media screen and (max-width: 768px) {
+    .zona1, .zona2 {
+        width: 100%; /* Pe dispozitive mobile, zonele devin stackate */
+        margin: 0;
+    }
+}
