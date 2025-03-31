@@ -1,15 +1,15 @@
 /* Setează fontul Bellefair-Regular */
 @font-face {
     font-family: 'Bellefair-Regular';
-    src: url('resurse/Bellefair-Regular.ttf') format('truetype');
+    src: url('https://github.com/DustyDragneaSLR/olimpiada/blob/main/Bellefair-Regular.ttf') format('truetype');
 }
 
 															
 
 /* Container pentru a controla layout-ul */
 .container {
-    display: flex;
-    height: 700vh; /* Întregul viewport */
+    display: grid;
+    height: 100vh; /* Întregul viewport */
 }
 
 /* Zona1 - 20% din fereastră */
@@ -18,6 +18,10 @@
     background-color: rgba(255, 0, 255, 1); /* Fundal semitransparent pentru zona1 */
     padding: 20px;
     box-sizing: border-box;
+    position:relative;
+    bottom:1px
+
+
 }
 
 /* Zona2 - 80% din fereastră */
@@ -26,6 +30,16 @@
     padding: 20px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.8); /* Fundal semitransparent pentru zona2 */
+}
+}
+
+/* Container * /
+.underline-container {
+position: absolute;
+left:0;
+bottom: -10px;
+width:1%;
+height:1%;
 }
 
 /* Zona3 - 80% din fereastră */
@@ -36,6 +50,7 @@
     background-color: rgba(255, 255, 255, 0.8); /* Fundal semitransparent pentru zona2 */
 }
 
+ 
 
 /* Titlul paginii */
 h1, h2 {
