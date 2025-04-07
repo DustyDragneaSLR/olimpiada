@@ -1,78 +1,32 @@
-﻿/* Setează fontul Bellefair-Regular */
+/* Setează fontul Bellefair-Regular */
 @font-face {
     font-family: 'Bellefair-Regular';
-    src: url('https://github.com/DustyDragneaSLR/olimpiada/blob/main/Bellefair-Regular.ttf') format('truetype');
+    src: url('resurse/Bellefair-Regular.ttf') format('truetype');
 }
 
 															
 
 /* Container pentru a controla layout-ul */
 .container {
-    display: grid;
+    display: flex;
     height: 100vh; /* Întregul viewport */
 }
 
 /* Zona1 - 20% din fereastră */
 .zona1 {
-	height:20%;
-    background-color: rgba(255, 0, 255, 1); /* Fundal semitransparent pentru zona1 */
-    padding: 0px;
-    box-sizing: content-box;
-    position:relative;
-    bottom:1px;
-
-
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.7); /* Fundal semitransparent pentru zona1 */
+    padding: 20px;
+    box-sizing: border-box;
 }
-
-.menu ul {
-		position:absolute;
-		left: 1100px;
-		top:10px;
-		list-style-type:disc;
-		padding:0;
-		margin:0;
-		display:flex;
-	}
-	
-	.menu li {
-		align:right;
-		margin-right:20px;
-		position: static;
-	}
-	.menu a.active {
-		display:flex;
-	}
-	.menu a:hover {
-		background-color: #FFFFFF;
-	}
-	.menu a:hover {
-		background-color: #FFFFFFF;
-	}
-    .h1 {
-		position:relative;
-		bottom:900x;
-
-    }
-	
 
 /* Zona2 - 80% din fereastră */
 .zona2 {
-	height:80%;
-    padding: 0px;
-    box-sizing: content-box;
-    background-color: rgba(25, 255, 255, 0.8); /* Fundal semitransparent pentru zona2 */
-}
-
-
-/* Zona3 - 80% din fereastră */
-.zona3 {
     width: 80%;
     padding: 20px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.8); /* Fundal semitransparent pentru zona2 */
 }
-
- 
 
 /* Titlul paginii */
 h1, h2 {
